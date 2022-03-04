@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.Windows.CppWinRT.2.0.190404.8\build\native\Microsoft.Windows.CppWinRT.props" Condition="Exists('packages\Microsoft.Windows.CppWinRT.2.0.190404.8\build\native\Microsoft.Windows.CppWinRT.props')" />
+  <PropertyGroup>
+    <SharedContentDir>$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), LICENSE))\SharedContent</SharedContentDir>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <MinimalCoreWin>true</MinimalCoreWin>
+    <ProjectGuid>{F2EE7569-2AFA-53F7-89E6-93447D31465A}</ProjectGuid>
+    <ProjectName>AppWindow</ProjectName>
+    <RootNamespace>SDKTemplate</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>$(WindowsTargetPlatformVersion)</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>$(VC_IncludePath);$(UniversalCRT_IncludePath);$(WindowsSDK_IncludePath);$(SharedContentDir)\cppwinrt</IncludePath>
+    <CppWinRTOptimized>true</CppWinRTOptimized>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
+    <GenerateTestArtifacts>True</GenerateTestArtifacts>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>55D5D3EE065E6FBEF7AB5C5889AFC1C0F5AF6909</PackageCertificateThumbprint>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>ecoin</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level4</WarningLevel>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;ECOIN_SECURE;_CRT_SECURE_NO_WARNINGS;_TIMESPEC_DEFINED;DISABLE_XAML_GENERATED_BREAK_ON_UNHANDLED_EXCEPTION;ECOIN_MINER;_ALLOW_COMPILER_AND_STL_VERSION_MISMATCH;USE_NUM_GMP;WANT_TMP_ALLOCA;WANT_TMP_REENTRANT;WANT_TMP_NOTREENTRANT;USE_BASIC_CONFIG;USE_FIELD_10X26;USE_FIELD_INV_BUILTIN;USE_SCALAR_8X32;USE_SCALAR_INV_BUILTIN;ENABLE_MODULE_RECOVERY;ECOIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsWinRT>
+      <SDLCheck Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</SDLCheck>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects Base\boost1.47.0;C:\Projects Base\boost1.47.0\boost;Code\Hash;Code\Hash\libsecp\libsecp256k1\include;Code\Hash\libsecp\libsecp256k1\src;Code\Hash\libsecp\libsecp256k1;Code\Hash\gmp;Code\Mission;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Windows</SubSystem>
+      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WindowsApp.lib;Ws2_32.lib;Mswsock.lib;AdvApi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SharedContentDir)\cppwinrt\App.h">
+      <DependentUpon>$(SharedContentDir)\xaml\App.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="$(SharedContentDir)\cppwinrt\MainPage.h">
+      <DependentUpon>$(SharedContentDir)\xaml\MainPage.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="Code\CLS\Collection.h" />
+    <ClInclude Include="Code\CLS\Color.h" />
+    <ClInclude Include="Code\CLS\Corner.h" />
+    <ClInclude Include="Code\CLS\Element.h" />
+    <ClInclude Include="Code\CLS\Leg.h" />
+    <ClInclude Include="Code\CLS\Object.h" />
+    <ClInclude Include="Code\CLS\Result.h" />
+    <ClInclude Include="Code\CLS\Surface.h" />
+    <ClInclude Include="Code\CLS\Target.h" />
+    <ClInclude Include="Code\Cube\bvh.h" />
+    <ClInclude Include="Code\Cube\collide.h" />
+    <ClInclude Include="Code\Cube\InstantFunction.h" />
+    <ClInclude Include="Code\Cube\predator.h" />
+    <ClInclude Include="Code\Cube\qcom.h" />
+    <ClInclude Include="Code\Cube\vec4d.h" />
+    <ClInclude Include="Code\Hash\arith_uint256.h" />
+    <ClInclude Include="Code\Hash\base58.h" />
+    <ClInclude Include="Code\Hash\chainparams.h" />
+    <ClInclude Include="Code\Hash\chainparamsseeds.h" />
+    <ClInclude Include="Code\Hash\crypto\aes.h" />
+    <ClInclude Include="Code\Hash\crypto\chacha20.h" />
+    <ClInclude Include="Code\Hash\crypto\hmac_sha256.h" />
+    <ClInclude Include="Code\Hash\crypto\hmac_sha512.h" />
+    <ClInclude Include="Code\Hash\crypto\ripemd160.h" />
+    <ClInclude Include="Code\Hash\crypto\sha1.h" />
+    <ClInclude Include="Code\Hash\crypto\sha256.h" />
+    <ClInclude Include="Code\Hash\crypto\sha512.h" />
+    <ClInclude Include="Code\Hash\key.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecdsa.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecdsa_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\eckey.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\eckey_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecmult.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecmult_const.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecmult_const_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecmult_gen.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecmult_gen_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecmult_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field_10x26.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field_10x26_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field_5x52.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field_5x52_asm_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field_5x52_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field_5x52_int128_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\group.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\group_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\hash.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\hash_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\num.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\num_gmp.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\num_gmp_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\num_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar_4x64.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar_4x64_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar_8x32.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar_8x32_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar_low.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar_low_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\testrand.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\testrand_impl.h" />
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\util.h" />
+    <ClInclude Include="Code\Hash\picosha2.h" />
+    <ClInclude Include="Code\Hash\primitives\block.h" />
+    <ClInclude Include="Code\Hash\primitives\transaction.h" />
+    <ClInclude Include="Code\Hash\protocol.h" />
+    <ClInclude Include="Code\Hash\pubkey.h" />
+    <ClInclude Include="Code\Hash\random.h" />
+    <ClInclude Include="Code\Hash\script\script.h" />
+    <ClInclude Include="Code\Hash\script\sigcache.h" />
+    <ClInclude Include="Code\Hash\script\sign.h" />
+    <ClInclude Include="Code\Hash\support\cleanse.h" />
+    <ClInclude Include="Code\Hash\support\events.h" />
+    <ClInclude Include="Code\Hash\support\lockedpool.h" />
+    <ClInclude Include="Code\Hash\uint128_t.h" />
+    <ClInclude Include="Code\Hash\uint256.h" />
+    <ClInclude Include="Code\Hash\utilstrencodings.h" />
+    <ClInclude Include="Code\Mission\qam.h" />
+    <ClInclude Include="Code\Mission\qamEvent.h" />
+    <ClInclude Include="Code\Mission\qamFunction.h" />
+    <ClInclude Include="Code\Mission\qamGraph.h" />
+    <ClInclude Include="Code\Mission\qamSpawn.h" />
+    <ClInclude Include="Code\Mission\qamSystem.h" />
+    <ClInclude Include="Code\Mission\qamTerrain.h" />
+    <ClInclude Include="Code\Mission\qamTrigger.h" />
+    <ClInclude Include="Code\Mission\qamType.h" />
+    <ClInclude Include="Code\Mission\qamVariable.h" />
+    <ClInclude Include="Code\Musion\Class.h" />
+    <ClInclude Include="Code\Musion\ClassVar.h" />
+    <ClInclude Include="Code\Musion\Code.h" />
+    <ClInclude Include="Code\Musion\CodeLine.h" />
+    <ClInclude Include="Code\Musion\Condition.h" />
+    <ClInclude Include="Code\Musion\Function.h" />
+    <ClInclude Include="Code\Musion\MuType.h" />
+    <ClInclude Include="Code\Musion\Operator.h" />
+    <ClInclude Include="Code\Musion\System.h" />
+    <ClInclude Include="Code\Musion\Variable.h" />
+    <ClInclude Include="Code\myBO\datatypes.h" />
+    <ClInclude Include="Code\myBO\icDatabase.h" />
+    <ClInclude Include="Code\myBO\icSafeL.h" />
+    <ClInclude Include="Code\myBO\Singleton.h" />
+    <ClInclude Include="Code\Work\Contract.h" />
+    <ClInclude Include="Code\Work\Schedular.h" />
+    <ClInclude Include="Common\DeviceResources.h" />
+    <ClInclude Include="Common\DirectXHelper.h" />
+    <ClInclude Include="Common\StepTimer.h" />
+    <ClInclude Include="Content\Sample3DSceneRenderer.h" />
+    <ClInclude Include="Content\SampleFpsTextRenderer.h" />
+    <ClInclude Include="Content\ShaderStructures.h" />
+    <ClInclude Include="ecoinMain.h" />
+    <ClInclude Include="Include\Cube.h" />
+    <ClInclude Include="Include\osimemory.h" />
+    <ClInclude Include="SampleConfiguration.h" />
+    <ClInclude Include="Scenario1_SecondaryWindow.h">
+      <DependentUpon>..\shared\Scenario1_SecondaryWindow.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="Scenario2_DisplayRegion.h">
+      <DependentUpon>..\shared\Scenario2_DisplayRegion.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="Scenario3_Size.h">
+      <DependentUpon>..\shared\Scenario3_Size.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="Scenario4_CompactOverlay.h">
+      <DependentUpon>..\shared\Scenario4_CompactOverlay.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="Scenario5_RelativePositioning.h">
+      <DependentUpon>..\shared\Scenario5_RelativePositioning.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="SecondaryAppWindowPage.h">
+      <DependentUpon>..\shared\SecondaryAppWindowPage.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="SecondaryAppWindowPageDX.h">
+      <DependentUpon>..\shared\SecondaryAppWindowPageDX.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="SecondaryAppWindowPagePredator.h">
+      <DependentUpon>..\shared\SecondaryAppWindowPagePredator.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="Wallet\ecoinShop.h" />
+    <ClInclude Include="Wallet\Wallet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(SharedContentDir)\xaml\App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="$(SharedContentDir)\xaml\MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\shared\Scenario1_SecondaryWindow.xaml" />
+    <Page Include="..\shared\Scenario2_DisplayRegion.xaml" />
+    <Page Include="..\shared\Scenario3_Size.xaml" />
+    <Page Include="..\shared\Scenario4_CompactOverlay.xaml" />
+    <Page Include="..\shared\Scenario5_RelativePositioning.xaml" />
+    <Page Include="..\shared\SecondaryAppWindowPage.xaml" />
+    <Page Include="$(SharedContentDir)\xaml\Styles.xaml">
+      <Link>Styles\Styles.xaml</Link>
+    </Page>
+    <Page Include="..\shared\SecondaryAppWindowPageDX.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\shared\SecondaryAppWindowPagePredator.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SharedContentDir)\cppwinrt\App.cpp">
+      <DependentUpon>$(SharedContentDir)\xaml\App.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="$(SharedContentDir)\cppwinrt\MainPage.cpp">
+      <DependentUpon>$(SharedContentDir)\xaml\MainPage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="Code\CLS\Collection.cpp" />
+    <ClCompile Include="Code\CLS\Color.cpp" />
+    <ClCompile Include="Code\CLS\Corner.cpp" />
+    <ClCompile Include="Code\CLS\Element.cpp" />
+    <ClCompile Include="Code\CLS\Leg.cpp" />
+    <ClCompile Include="Code\CLS\Object.cpp" />
+    <ClCompile Include="Code\CLS\Result.cpp" />
+    <ClCompile Include="Code\CLS\Surface.cpp" />
+    <ClCompile Include="Code\CLS\Target.cpp" />
+    <ClCompile Include="Code\Cube\aabb.cpp" />
+    <ClCompile Include="Code\Cube\Cube&amp;Bicycle.cpp" />
+    <ClCompile Include="Code\Cube\Cubetronics.cpp" />
+    <ClCompile Include="Code\Cube\Decisions.cpp" />
+    <ClCompile Include="Code\Cube\InstantFunction.cpp" />
+    <ClCompile Include="Code\Cube\predator.cpp" />
+    <ClCompile Include="Code\Cube\qcom.cpp" />
+    <ClCompile Include="Code\Cube\tri_contact.cpp" />
+    <ClCompile Include="Code\Hash\arith_uint256.cpp" />
+    <ClCompile Include="Code\Hash\base58.cpp" />
+    <ClCompile Include="Code\Hash\chainparams.cpp" />
+    <ClCompile Include="Code\Hash\crypto\aes.cpp" />
+    <ClCompile Include="Code\Hash\crypto\chacha20.cpp" />
+    <ClCompile Include="Code\Hash\crypto\hmac_sha256.cpp" />
+    <ClCompile Include="Code\Hash\crypto\hmac_sha512.cpp" />
+    <ClCompile Include="Code\Hash\crypto\ripemd160.cpp" />
+    <ClCompile Include="Code\Hash\crypto\sha1.cpp" />
+    <ClCompile Include="Code\Hash\crypto\sha256.cpp" />
+    <ClCompile Include="Code\Hash\crypto\sha256_sse4.cpp" />
+    <ClCompile Include="Code\Hash\crypto\sha512.cpp" />
+    <ClCompile Include="Code\Hash\key.cpp" />
+    <ClCompile Include="Code\Hash\libsecp\libsecp256k1\src\secp256k1.cpp" />
+    <ClCompile Include="Code\Hash\primitives\block.cpp" />
+    <ClCompile Include="Code\Hash\primitives\transaction.cpp" />
+    <ClCompile Include="Code\Hash\pubkey.cpp" />
+    <ClCompile Include="Code\Hash\random.cpp" />
+    <ClCompile Include="Code\Hash\script\script.cpp" />
+    <ClCompile Include="Code\Hash\support\cleanse.cpp" />
+    <ClCompile Include="Code\Hash\support\lockedpool.cpp" />
+    <ClCompile Include="Code\Hash\uint128_t.cpp" />
+    <ClCompile Include="Code\Hash\uint256.cpp" />
+    <ClCompile Include="Code\Hash\utilstrencodings.cpp" />
+    <ClCompile Include="Code\Mission\qam.cpp" />
+    <ClCompile Include="Code\Mission\qamEvent.cpp" />
+    <ClCompile Include="Code\Mission\qamFunction.cpp" />
+    <ClCompile Include="Code\Mission\qamGraph.cpp" />
+    <ClCompile Include="Code\Mission\qamSpawn.cpp" />
+    <ClCompile Include="Code\Mission\qamSystem.cpp" />
+    <ClCompile Include="Code\Mission\qamTerrain.cpp" />
+    <ClCompile Include="Code\Mission\qamTrigger.cpp" />
+    <ClCompile Include="Code\Mission\qamVariable.cpp" />
+    <ClCompile Include="Code\Musion\Class.cpp" />
+    <ClCompile Include="Code\Musion\ClassVar.cpp" />
+    <ClCompile Include="Code\Musion\Code.cpp" />
+    <ClCompile Include="Code\Musion\CodeLine.cpp" />
+    <ClCompile Include="Code\Musion\Condition.cpp" />
+    <ClCompile Include="Code\Musion\Function.cpp" />
+    <ClCompile Include="Code\Musion\Operator.cpp" />
+    <ClCompile Include="Code\Musion\System.cpp" />
+    <ClCompile Include="Code\Musion\Variable.cpp" />
+    <ClCompile Include="Code\myBO\icSafeL.cpp" />
+    <ClCompile Include="Code\Work\Contract.cpp" />
+    <ClCompile Include="Code\Work\Schedular.cpp" />
+    <ClCompile Include="Common\DeviceResources.cpp" />
+    <ClCompile Include="Content\Sample3DSceneRenderer.cpp" />
+    <ClCompile Include="Content\SampleFpsTextRenderer.cpp" />
+    <ClCompile Include="ecoinMain.cpp" />
+    <ClCompile Include="SampleConfiguration.cpp">
+      <DependentUpon>SampleConfiguration.h</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="Scenario1_SecondaryWindow.cpp">
+      <DependentUpon>..\shared\Scenario1_SecondaryWindow.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="Scenario2_DisplayRegion.cpp">
+      <DependentUpon>..\shared\Scenario2_DisplayRegion.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="Scenario3_Size.cpp">
+      <DependentUpon>..\shared\Scenario3_Size.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="Scenario4_CompactOverlay.cpp">
+      <DependentUpon>..\shared\Scenario4_CompactOverlay.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="Scenario5_RelativePositioning.cpp">
+      <DependentUpon>..\shared\Scenario5_RelativePositioning.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="SecondaryAppWindowPage.cpp">
+      <DependentUpon>..\shared\SecondaryAppWindowPage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <DependentUpon>pch.h</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <DependentUpon>Project.idl</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="SecondaryAppWindowPageDX.cpp">
+      <DependentUpon>..\shared\SecondaryAppWindowPageDX.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="SecondaryAppWindowPagePredator.cpp">
+      <DependentUpon>..\shared\SecondaryAppWindowPagePredator.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="Wallet\ecoinShop.cpp" />
+    <ClCompile Include="Wallet\Wallet.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="MainPage.idl">
+      <DependentUpon>$(SharedContentDir)\xaml\MainPage.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="Project.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(SharedContentDir)\media\smalltile-sdk.png">
+      <Link>Assets\smallTile-sdk.png</Link>
+    </Image>
+    <Image Include="$(SharedContentDir)\media\squaretile-sdk.png">
+      <Link>Assets\squareTile-sdk.png</Link>
+    </Image>
+    <Image Include="$(SharedContentDir)\media\storelogo-sdk.png">
+      <Link>Assets\storeLogo-sdk.png</Link>
+    </Image>
+    <Image Include="$(SharedContentDir)\media\tile-sdk.png">
+      <Link>Assets\tile-sdk.png</Link>
+    </Image>
+    <Image Include="Assets\7160869.png" />
+    <Image Include="Assets\7160869alter.png" />
+    <Image Include="Assets\AddonTemplate.png" />
+    <Image Include="Assets\AddonTemplateMiner.png" />
+    <Image Include="Assets\AddonTemplateSavehesh.png" />
+    <Image Include="Assets\AddonTemplateServer.png" />
+    <Image Include="Assets\aeon-coin-logo.png" />
+    <Image Include="Assets\AmusedBraveAtlanticridleyturtle-poster.jpg" />
+    <Image Include="Assets\BackButton.png" />
+    <Image Include="Assets\Bitcoin-1.png" />
+    <Image Include="Assets\bitcoin-1813503_1280 (1).jpg" />
+    <Image Include="Assets\bitcoin-1813503_1280.jpg" />
+    <Image Include="Assets\bitcoin-perfecthue.jpg" />
+    <Image Include="Assets\bitcoin-perfecthueBU.jpg" />
+    <Image Include="Assets\Bitcoin.png" />
+    <Image Include="Assets\bitcoins.png" />
+    <Image Include="Assets\bitcoin_cible_bruxelles.jpg" />
+    <Image Include="Assets\Buy5000.png" />
+    <Image Include="Assets\DQmWH24KtcXLmQhb5QJwXt8gsixpPPZAgpYVED9fDtJQWMC.png" />
+    <Image Include="Assets\easyworship_cross04.jpg" />
+    <Image Include="Assets\ecoin-sdk.png" />
+    <Image Include="Assets\ecoin.png" />
+    <Image Include="Assets\ecoinbr.png" />
+    <Image Include="Assets\ecoinbrcps.png" />
+    <Image Include="Assets\ethereum1.png" />
+    <Image Include="Assets\facade-of-a-shop.jpg" />
+    <Image Include="Assets\giphy123.gif" />
+    <Image Include="Assets\giphy357657.gif" />
+    <Image Include="Assets\giphybitolyl.gif" />
+    <Image Include="Assets\giphycooltext.gif" />
+    <Image Include="Assets\giphydarkblk.gif" />
+    <Image Include="Assets\giphydarklasers.gif" />
+    <Image Include="Assets\giphydarkspiral.gif" />
+    <Image Include="Assets\giphydarkstage.gif" />
+    <Image Include="Assets\giphyevencoolertext.gif" />
+    <Image Include="Assets\giphyflashy.gif" />
+    <Image Include="Assets\giphyguilding.gif" />
+    <Image Include="Assets\giphyimage.gif" />
+    <Image Include="Assets\giphyinformedzoom.gif" />
+    <Image Include="Assets\giphyluiop.gif" />
+    <Image Include="Assets\giphypopalbloomy.gif" />
+    <Image Include="Assets\giphysquarepusher.gif" />
+    <Image Include="Assets\giphytext345.gif" />
+    <Image Include="Assets\giphytext34657.gif" />
+    <Image Include="Assets\images (1).jpg" />
+    <Image Include="Assets\images (2).jpg" />
+    <Image Include="Assets\images.jpg" />
+    <Image Include="Assets\LockScreenLogo.scale-200.png" />
+    <Image Include="Assets\maxresdefault-620x330.jpg" />
+    <Image Include="Assets\minerpanel.png" />
+    <Image Include="Assets\minerpanelplau21r.png" />
+    <Image Include="Assets\monero1.png" />
+    <Image Include="Assets\New1\004.jpg" />
+    <Image Include="Assets\New1\005.jpg" />
+    <Image Include="Assets\New1\1.gif" />
+    <Image Include="Assets\New1\10-1.gif" />
+    <Image Include="Assets\New1\1080_Green_White_Sparkles_loop_Videvo.jpg" />
+    <Image Include="Assets\New1\11-1.gif" />
+    <Image Include="Assets\New1\11.jpg" />
+    <Image Include="Assets\New1\12-1.gif" />
+    <Image Include="Assets\New1\13-1.gif" />
+    <Image Include="Assets\New1\14-1.gif" />
+    <Image Include="Assets\New1\15-1.gif" />
+    <Image Include="Assets\New1\16-1.gif" />
+    <Image Include="Assets\New1\17-1.gif" />
+    <Image Include="Assets\New1\18-1.gif" />
+    <Image Include="Assets\New1\19-1.gif" />
+    <Image Include="Assets\New1\2-2.gif" />
+    <Image Include="Assets\New1\2.gif" />
+    <Image Include="Assets\New1\20-1.gif" />
+    <Image Include="Assets\New1\21-1.gif" />
+    <Image Include="Assets\New1\3-1.gif" />
+    <Image Include="Assets\New1\3.gif" />
+    <Image Include="Assets\New1\3.jpg" />
+    <Image Include="Assets\New1\4.gif" />
+    <Image Include="Assets\New1\5-1.gif" />
+    <Image Include="Assets\New1\6-1.gif" />
+    <Image Include="Assets\New1\7-1.gif" />
+    <Image Include="Assets\New1\8-1.gif" />
+    <Image Include="Assets\New1\9-1.gif" />
+    <Image Include="Assets\New1\abstract-nature.jpg" />
+    <Image Include="Assets\New1\bit.jpg" />
+    <Image Include="Assets\New1\bitologo2.png" />
+    <Image Include="Assets\New1\bokeh-gold-wallpaper-2560x1600.jpg" />
+    <Image Include="Assets\New1\border1.png" />
+    <Image Include="Assets\New1\britishflag.png" />
+    <Image Include="Assets\New1\brushed-panel-444516.jpg" />
+    <Image Include="Assets\New1\cryptocurrency-wallets.jpg" />
+    <Image Include="Assets\New1\currency-trading.jpg" />
+    <Image Include="Assets\New1\ecn-central2.png" />
+    <Image Include="Assets\New1\ecn-world-logo-4.png" />
+    <Image Include="Assets\New1\ECN3.jpeg" />
+    <Image Include="Assets\New1\ecnpowering.gif" />
+    <Image Include="Assets\New1\favicon-96x96.png" />
+    <Image Include="Assets\New1\flashing-lights-bulb-vj-spotlight-wall-of-lights-stage-motion-graphic-background-4k-ultra-hd_vy6me9si__F0000.png" />
+    <Image Include="Assets\New1\giphy-downsized-ltcgrow.gif" />
+    <Image Include="Assets\New1\giphy-downsized4r56456.gif" />
+    <Image Include="Assets\New1\giphy-downsizeddfrsg.gif" />
+    <Image Include="Assets\New1\giphy-downsizedrettry.gif" />
+    <Image Include="Assets\New1\giphy-downsizedwqee.gif" />
+    <Image Include="Assets\New1\giphy.gif" />
+    <Image Include="Assets\New1\giphyhytj.gif" />
+    <Image Include="Assets\New1\giphyrdfgswaa.gif" />
+    <Image Include="Assets\New1\giphysdaff.gif" />
+    <Image Include="Assets\New1\giphytyuiyi.gif" />
+    <Image Include="Assets\New1\gold-and-white-background-light-gold-abstract-background-a87740526b215871.jpg" />
+    <Image Include="Assets\New1\hollywood_golden_bokeh_by_diamondlightart-d4s7drt.png" />
+    <Image Include="Assets\New2\AmusedBraveAtlanticridleyturtle-poster.jpg" />
+    <Image Include="Assets\New2\easyworship_cross04.jpg" />
+    <Image Include="Assets\New2\giphy123.gif" />
+    <Image Include="Assets\New2\giphy357657.gif" />
+    <Image Include="Assets\New2\giphybitolyl.gif" />
+    <Image Include="Assets\New2\giphycooltext.gif" />
+    <Image Include="Assets\New2\giphydarkblk.gif" />
+    <Image Include="Assets\New2\giphydarklasers.gif" />
+    <Image Include="Assets\New2\giphydarkspiral.gif" />
+    <Image Include="Assets\New2\giphydarkstage.gif" />
+    <Image Include="Assets\New2\giphyevencoolertext.gif" />
+    <Image Include="Assets\New2\giphyflashy.gif" />
+    <Image Include="Assets\New2\giphyguilding.gif" />
+    <Image Include="Assets\New2\giphyimage.gif" />
+    <Image Include="Assets\New2\giphyinformedzoom.gif" />
+    <Image Include="Assets\New2\giphypopalbloomy.gif" />
+    <Image Include="Assets\New2\giphysquarepusher.gif" />
+    <Image Include="Assets\New2\giphytext345.gif" />
+    <Image Include="Assets\New2\giphytext34657.gif" />
+    <Image Include="Assets\New3\6a90b8ce390c7646c515cab20aff56c8.jpg" />
+    <Image Include="Assets\New3\image_265422.jpg" />
+    <Image Include="Assets\New3\pngtree-black-gold-premium-texture-film-festival-mobile-phone-poster-image_194129.jpg" />
+    <Image Include="Assets\New3\pngtree-black-gold-technology-2019-annual-meeting-background-gold-backgroundtechnologyannual-meetingannual-image_70540.jpg" />
+    <Image Include="Assets\New4\giph23y.gif" />
+    <Image Include="Assets\New4\giphy234234.gif" />
+    <Image Include="Assets\New4\giphy34324.gif" />
+    <Image Include="Assets\New4\giphyblue.gif" />
+    <Image Include="Assets\New4\giphyerwer.gif" />
+    <Image Include="Assets\New4\giphygreen.gif" />
+    <Image Include="Assets\New4\giphygreenstar.gif" />
+    <Image Include="Assets\New4\giphypulser.gif" />
+    <Image Include="Assets\New4\giphypurple.gif" />
+    <Image Include="Assets\New4\giphyrewr.gif" />
+    <Image Include="Assets\New5\giphyccry.gif" />
+    <Image Include="Assets\New5\giphycheesy.gif" />
+    <Image Include="Assets\New5\giphychunkaff.gif" />
+    <Image Include="Assets\New5\giphyenergy.gif" />
+    <Image Include="Assets\New5\giphygrswirl.gif" />
+    <Image Include="Assets\New5\giphyhorison.gif" />
+    <Image Include="Assets\New5\giphylarf.gif" />
+    <Image Include="Assets\NextButton.png" />
+    <Image Include="Assets\osirem-sdk.png" />
+    <Image Include="Assets\osirem-sdk3.png" />
+    <Image Include="Assets\PackageLogo.scale-100.png" />
+    <Image Include="Assets\PackageLogo.scale-125.png" />
+    <Image Include="Assets\PackageLogo.scale-150.png" />
+    <Image Include="Assets\PackageLogo.scale-200.png" />
+    <Image Include="Assets\PackageLogo.scale-400.png" />
+    <Image Include="Assets\Pure.png" />
+    <Image Include="Assets\record_button.png" />
+    <Image Include="Assets\skip_button_left.png" />
+    <Image Include="Assets\skip_button_left_new1.png" />
+    <Image Include="Assets\skip_button_left_new2.png" />
+    <Image Include="Assets\skip_button_right.png" />
+    <Image Include="Assets\skip_button_right_new1.png" />
+    <Image Include="Assets\skip_button_right_new2.png" />
+    <Image Include="Assets\smallTile-sdk.scale-100.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\smallTile-sdk.scale-200.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\source.gif" />
+    <Image Include="Assets\SplashScreenV5.scale-100.png" />
+    <Image Include="Assets\SplashScreenV5.scale-125.png" />
+    <Image Include="Assets\SplashScreenV5.scale-150.png" />
+    <Image Include="Assets\SplashScreenV5.scale-200.png" />
+    <Image Include="Assets\SplashScreenV5.scale-400.png" />
+    <Image Include="Assets\Square150x150Logo.scale-100.png" />
+    <Image Include="Assets\Square150x150Logo.scale-125.png" />
+    <Image Include="Assets\Square150x150Logo.scale-150.png" />
+    <Image Include="Assets\Square150x150Logo.scale-200.png" />
+    <Image Include="Assets\Square150x150Logo.scale-400.png" />
+    <Image Include="Assets\Square310x310Logo.scale-100.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\Square310x310Logo.scale-125.png" />
+    <Image Include="Assets\Square310x310Logo.scale-150.png" />
+    <Image Include="Assets\Square310x310Logo.scale-200.png" />
+    <Image Include="Assets\Square310x310Logo.scale-400.png" />
+    <Image Include="Assets\Square44x44Logo.scale-100.png" />
+    <Image Include="Assets\Square44x44Logo.scale-125.png" />
+    <Image Include="Assets\Square44x44Logo.scale-150.png" />
+    <Image Include="Assets\Square44x44Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.scale-400.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Image Include="Assets\Square71x71Logo.scale-100.png" />
+    <Image Include="Assets\Square71x71Logo.scale-125.png" />
+    <Image Include="Assets\Square71x71Logo.scale-150.png" />
+    <Image Include="Assets\Square71x71Logo.scale-200.png" />
+    <Image Include="Assets\Square71x71Logo.scale-400.png" />
+    <Image Include="Assets\squareTile-sdk.scale-100.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\stop_button.png" />
+    <Image Include="Assets\StoreLogo.png" />
+    <Image Include="Assets\Wide310x150Logo.scale-100.png" />
+    <Image Include="Assets\Wide310x150Logo.scale-125.png" />
+    <Image Include="Assets\Wide310x150Logo.scale-150.png" />
+    <Image Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Image Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Image Include="Assets\WithdrawPie.png" />
+    <Image Include="Assets\WithdrawPie2.png" />
+    <Image Include="Assets\xe8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Content\comPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Content\comVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Content\CurvePixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Content\CurveVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Content\QcomGridPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Content\QcomGridVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Content\SamplePixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Content\SampleVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\Fonts\Audiowide-Regular.ttf" />
+    <Font Include="Assets\Fonts\NovaCut.ttf" />
+    <Font Include="Assets\Fonts\ProstoOne-Regular.ttf" />
+    <Font Include="Assets\Fonts\Raleway-Light.ttf" />
+    <Font Include="Assets\Fonts\Sevillana-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package.StoreAssociation.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\Microsoft.Windows.CppWinRT.2.0.190404.8\build\native\Microsoft.Windows.CppWinRT.targets" Condition="Exists('packages\Microsoft.Windows.CppWinRT.2.0.190404.8\build\native\Microsoft.Windows.CppWinRT.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.Windows.CppWinRT.2.0.190404.8\build\native\Microsoft.Windows.CppWinRT.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Windows.CppWinRT.2.0.190404.8\build\native\Microsoft.Windows.CppWinRT.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.Windows.CppWinRT.2.0.190404.8\build\native\Microsoft.Windows.CppWinRT.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Windows.CppWinRT.2.0.190404.8\build\native\Microsoft.Windows.CppWinRT.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,1382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>4416d50a-7676-4d0a-9b2c-91ff70c6047f</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Wallet">
+      <UniqueIdentifier>{4013f88e-ea7a-430d-8862-c10617b61ee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wallet\Header Files">
+      <UniqueIdentifier>{979288db-23a0-4772-88e8-80cd42084ab4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code">
+      <UniqueIdentifier>{140be8b1-6940-4174-bca8-973808281419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Work">
+      <UniqueIdentifier>{3a7c4800-f4d3-47a8-a0ce-4dbfd1115ae3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Work\Header Files">
+      <UniqueIdentifier>{1b1f995c-dc61-4cda-9f26-8384e23d9af4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Musion">
+      <UniqueIdentifier>{719cdf1c-9f59-4705-aebc-5d1a52fccc35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Musion\Header Files">
+      <UniqueIdentifier>{0f8e32c7-9ffb-4896-ab86-b5658a634817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{8aa25413-c20e-4811-a93f-d85f6b77bb96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\myBO">
+      <UniqueIdentifier>{62d86294-6c65-4473-bd07-aff8b3d0f081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\myBO\Header Files">
+      <UniqueIdentifier>{0cdccf0f-76f4-4297-8511-b4835d8c278f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Hash">
+      <UniqueIdentifier>{969560d5-908f-43b0-8f0c-5b1a1d1f0984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Hash\Header Files">
+      <UniqueIdentifier>{7cab6b38-87b2-482d-8175-dba3a076dd04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Hash\Primitives">
+      <UniqueIdentifier>{4414d395-3eea-4947-9ed7-70f08ea29cdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Hash\secp256k1">
+      <UniqueIdentifier>{31f66650-43ed-494d-b1a2-967b41110bbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Hash\Primitives\Header Files">
+      <UniqueIdentifier>{90ddb740-d444-4c3d-8aa5-d73b3d1fe251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Hash\secp256k1\Header Files">
+      <UniqueIdentifier>{03604718-33b1-4b68-b2a6-44eb5438b4dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>{a73b91bb-6f80-4dca-81ca-b9975467f31b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Header Files">
+      <UniqueIdentifier>{9e5b5585-b048-4104-91c7-edcd52760bbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Shader Files">
+      <UniqueIdentifier>{083dd62b-4a5e-4781-9ccd-4399f09abf72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\CLS Target">
+      <UniqueIdentifier>{fc2be603-5e8d-43d6-a874-d5d409c7c5bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Mission">
+      <UniqueIdentifier>{3f932b98-fa68-4f40-98e4-a6a8d9e502a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Cube">
+      <UniqueIdentifier>{b1f8dc5f-2bd3-48d6-9842-dc5452d27fd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Cube\Header Files">
+      <UniqueIdentifier>{938f0e5f-8577-4c46-bfbe-4db73c1633c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Mission\Header Files">
+      <UniqueIdentifier>{3280fe32-26ad-43ff-b3e5-1f83c784f83c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\CLS Target\Header Files">
+      <UniqueIdentifier>{31c4bbc9-6d7b-48ca-9843-5d6f5838db98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{31f7b1aa-1ce3-4558-ad2b-b9e1c92b0230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Header Files">
+      <UniqueIdentifier>{b1e2d1cf-cd62-435d-a132-63441916251d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Fonts">
+      <UniqueIdentifier>{b81188f6-0dee-45f3-8c50-2281da0f2229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\New1">
+      <UniqueIdentifier>{c8165aaf-1dab-4a1c-8839-6ebe139fc337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\New2">
+      <UniqueIdentifier>{9af33125-ea5a-4803-90f1-25d7e5cebff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\New3">
+      <UniqueIdentifier>{1967c9e4-e33f-4500-830a-3837da35c481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\New4">
+      <UniqueIdentifier>{4b05776a-47fa-4f6f-8c57-7349937b7811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\New5">
+      <UniqueIdentifier>{fdaa01e0-fd36-4513-95b1-30526df8b1b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(SharedContentDir)\xaml\Styles.xaml" />
+    <Page Include="$(SharedContentDir)\xaml\MainPage.xaml" />
+    <Page Include="..\shared\SecondaryAppWindowPage.xaml" />
+    <Page Include="..\shared\Scenario1_SecondaryWindow.xaml" />
+    <Page Include="..\shared\Scenario2_DisplayRegion.xaml" />
+    <Page Include="..\shared\Scenario3_Size.xaml" />
+    <Page Include="..\shared\Scenario4_CompactOverlay.xaml" />
+    <Page Include="..\shared\Scenario5_RelativePositioning.xaml" />
+    <Page Include="..\shared\SecondaryAppWindowPageDX.xaml" />
+    <Page Include="..\shared\SecondaryAppWindowPagePredator.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="$(SharedContentDir)\cppwinrt\MainPage.idl" />
+    <Midl Include="Project.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="SampleConfiguration.cpp" />
+    <ClCompile Include="$(SharedContentDir)\cppwinrt\App.cpp" />
+    <ClCompile Include="$(SharedContentDir)\cppwinrt\MainPage.cpp" />
+    <ClCompile Include="Scenario1_SecondaryWindow.cpp" />
+    <ClCompile Include="SecondaryAppWindowPage.cpp" />
+    <ClCompile Include="Scenario2_DisplayRegion.cpp" />
+    <ClCompile Include="Scenario3_Size.cpp" />
+    <ClCompile Include="Scenario4_CompactOverlay.cpp" />
+    <ClCompile Include="Scenario5_RelativePositioning.cpp" />
+    <ClCompile Include="Wallet\ecoinShop.cpp">
+      <Filter>Wallet</Filter>
+    </ClCompile>
+    <ClCompile Include="Wallet\Wallet.cpp">
+      <Filter>Wallet</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Work\Contract.cpp">
+      <Filter>Code\Work</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Work\Schedular.cpp">
+      <Filter>Code\Work</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Musion\Code.cpp">
+      <Filter>Code\Musion</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Musion\CodeLine.cpp">
+      <Filter>Code\Musion</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Musion\Condition.cpp">
+      <Filter>Code\Musion</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Musion\Function.cpp">
+      <Filter>Code\Musion</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Musion\Operator.cpp">
+      <Filter>Code\Musion</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Musion\System.cpp">
+      <Filter>Code\Musion</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Musion\Variable.cpp">
+      <Filter>Code\Musion</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DeviceResources.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\myBO\icSafeL.cpp">
+      <Filter>Code\myBO</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\base58.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\chainparams.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\pubkey.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\random.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\arith_uint256.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\crypto\aes.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\crypto\chacha20.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\crypto\hmac_sha256.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\crypto\hmac_sha512.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\crypto\ripemd160.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\crypto\sha1.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\crypto\sha256.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\crypto\sha256_sse4.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\crypto\sha512.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\support\cleanse.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\key.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\support\lockedpool.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\primitives\block.cpp">
+      <Filter>Code\Hash\Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\primitives\transaction.cpp">
+      <Filter>Code\Hash\Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\libsecp\libsecp256k1\src\secp256k1.cpp">
+      <Filter>Code\Hash\secp256k1</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\uint128_t.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\uint256.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\script\script.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Hash\utilstrencodings.cpp">
+      <Filter>Code\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Sample3DSceneRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\SampleFpsTextRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Mission\qam.cpp">
+      <Filter>Code\Mission</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Mission\qamEvent.cpp">
+      <Filter>Code\Mission</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Mission\qamFunction.cpp">
+      <Filter>Code\Mission</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Mission\qamGraph.cpp">
+      <Filter>Code\Mission</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Mission\qamSpawn.cpp">
+      <Filter>Code\Mission</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Mission\qamSystem.cpp">
+      <Filter>Code\Mission</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Mission\qamTerrain.cpp">
+      <Filter>Code\Mission</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Mission\qamTrigger.cpp">
+      <Filter>Code\Mission</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Mission\qamVariable.cpp">
+      <Filter>Code\Mission</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Cube\aabb.cpp">
+      <Filter>Code\Cube</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Cube\Cube&amp;Bicycle.cpp">
+      <Filter>Code\Cube</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Cube\Cubetronics.cpp">
+      <Filter>Code\Cube</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Cube\Decisions.cpp">
+      <Filter>Code\Cube</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Cube\qcom.cpp">
+      <Filter>Code\Cube</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Cube\tri_contact.cpp">
+      <Filter>Code\Cube</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CLS\Collection.cpp">
+      <Filter>Code\CLS Target</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CLS\Color.cpp">
+      <Filter>Code\CLS Target</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CLS\Corner.cpp">
+      <Filter>Code\CLS Target</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CLS\Element.cpp">
+      <Filter>Code\CLS Target</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CLS\Leg.cpp">
+      <Filter>Code\CLS Target</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CLS\Object.cpp">
+      <Filter>Code\CLS Target</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CLS\Result.cpp">
+      <Filter>Code\CLS Target</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CLS\Surface.cpp">
+      <Filter>Code\CLS Target</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CLS\Target.cpp">
+      <Filter>Code\CLS Target</Filter>
+    </ClCompile>
+    <ClCompile Include="ecoinMain.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="SecondaryAppWindowPageDX.cpp" />
+    <ClCompile Include="Code\Cube\predator.cpp">
+      <Filter>Code\Cube</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Cube\InstantFunction.cpp">
+      <Filter>Code\Cube</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Musion\Class.cpp">
+      <Filter>Code\Musion</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Musion\ClassVar.cpp">
+      <Filter>Code\Musion</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="SampleConfiguration.h" />
+    <ClInclude Include="$(SharedContentDir)\cppwinrt\App.h" />
+    <ClInclude Include="$(SharedContentDir)\cppwinrt\MainPage.h" />
+    <ClInclude Include="Scenario1_SecondaryWindow.h" />
+    <ClInclude Include="SecondaryAppWindowPage.h" />
+    <ClInclude Include="Scenario2_DisplayRegion.h" />
+    <ClInclude Include="Scenario3_Size.h" />
+    <ClInclude Include="Scenario4_CompactOverlay.h" />
+    <ClInclude Include="Scenario5_RelativePositioning.h" />
+    <ClInclude Include="Wallet\ecoinShop.h">
+      <Filter>Wallet\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wallet\Wallet.h">
+      <Filter>Wallet\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Work\Contract.h">
+      <Filter>Code\Work\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Work\Schedular.h">
+      <Filter>Code\Work\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Musion\Code.h">
+      <Filter>Code\Musion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Musion\CodeLine.h">
+      <Filter>Code\Musion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Musion\Condition.h">
+      <Filter>Code\Musion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Musion\Function.h">
+      <Filter>Code\Musion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Musion\MuType.h">
+      <Filter>Code\Musion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Musion\Operator.h">
+      <Filter>Code\Musion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Musion\System.h">
+      <Filter>Code\Musion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Musion\Variable.h">
+      <Filter>Code\Musion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DeviceResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\StepTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\myBO\datatypes.h">
+      <Filter>Code\myBO\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\myBO\icDatabase.h">
+      <Filter>Code\myBO\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\myBO\icSafeL.h">
+      <Filter>Code\myBO\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\myBO\Singleton.h">
+      <Filter>Code\myBO\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\arith_uint256.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\base58.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\chainparams.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\chainparamsseeds.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\pubkey.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\random.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\crypto\aes.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\crypto\chacha20.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\crypto\hmac_sha256.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\crypto\hmac_sha512.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\crypto\ripemd160.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\crypto\sha1.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\crypto\sha256.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\crypto\sha512.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\support\cleanse.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\support\events.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\key.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\support\lockedpool.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\primitives\block.h">
+      <Filter>Code\Hash\Primitives\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\primitives\transaction.h">
+      <Filter>Code\Hash\Primitives\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\picosha2.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\protocol.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\script\script.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\script\sigcache.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\script\sign.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\uint128_t.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\uint256.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\utilstrencodings.h">
+      <Filter>Code\Hash\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecdsa.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecdsa_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\eckey.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\eckey_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecmult.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecmult_const.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecmult_const_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecmult_gen.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecmult_gen_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\ecmult_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field_5x52.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field_5x52_asm_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field_5x52_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field_5x52_int128_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field_10x26.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field_10x26_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\field_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\group.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\group_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\hash.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\hash_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\num.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\num_gmp.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\num_gmp_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\num_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar_4x64.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar_4x64_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar_8x32.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar_8x32_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar_low.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\scalar_low_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\testrand.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\testrand_impl.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Hash\libsecp\libsecp256k1\src\util.h">
+      <Filter>Code\Hash\secp256k1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DirectXHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Sample3DSceneRenderer.h">
+      <Filter>Content\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\SampleFpsTextRenderer.h">
+      <Filter>Content\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\ShaderStructures.h">
+      <Filter>Content\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Mission\qam.h">
+      <Filter>Code\Mission\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Mission\qamEvent.h">
+      <Filter>Code\Mission\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Mission\qamFunction.h">
+      <Filter>Code\Mission\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Mission\qamGraph.h">
+      <Filter>Code\Mission\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Mission\qamSpawn.h">
+      <Filter>Code\Mission\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Mission\qamSystem.h">
+      <Filter>Code\Mission\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Mission\qamTerrain.h">
+      <Filter>Code\Mission\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Mission\qamTrigger.h">
+      <Filter>Code\Mission\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Mission\qamType.h">
+      <Filter>Code\Mission\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Mission\qamVariable.h">
+      <Filter>Code\Mission\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Cube\vec4d.h">
+      <Filter>Code\Cube\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Cube\qcom.h">
+      <Filter>Code\Cube\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Cube\collide.h">
+      <Filter>Code\Cube\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Cube\bvh.h">
+      <Filter>Code\Cube\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Cube.h">
+      <Filter>Code\Cube\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\CLS\Collection.h">
+      <Filter>Code\CLS Target\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\CLS\Color.h">
+      <Filter>Code\CLS Target\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\CLS\Corner.h">
+      <Filter>Code\CLS Target\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\CLS\Element.h">
+      <Filter>Code\CLS Target\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\CLS\Leg.h">
+      <Filter>Code\CLS Target\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\CLS\Object.h">
+      <Filter>Code\CLS Target\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\CLS\Result.h">
+      <Filter>Code\CLS Target\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\CLS\Surface.h">
+      <Filter>Code\CLS Target\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\CLS\Target.h">
+      <Filter>Code\CLS Target\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ecoinMain.h">
+      <Filter>Main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SecondaryAppWindowPageDX.h" />
+    <ClInclude Include="Code\Cube\predator.h">
+      <Filter>Code\Cube\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Cube\InstantFunction.h">
+      <Filter>Code\Cube\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Musion\Class.h">
+      <Filter>Code\Musion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Musion\ClassVar.h">
+      <Filter>Code\Musion\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\osimemory.h">
+      <Filter>Code\Cube\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(SharedContentDir)\media\smalltile-sdk.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(SharedContentDir)\media\squaretile-sdk.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(SharedContentDir)\media\storelogo-sdk.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(SharedContentDir)\media\tile-sdk.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\7160869.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\7160869alter.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\AddonTemplate.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\AddonTemplateMiner.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\AddonTemplateSavehesh.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\AddonTemplateServer.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\aeon-coin-logo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\AmusedBraveAtlanticridleyturtle-poster.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\BackButton.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Bitcoin.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\bitcoin_cible_bruxelles.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Bitcoin-1.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\bitcoin-1813503_1280 (1).jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\bitcoin-1813503_1280.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\bitcoin-perfecthue.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\bitcoin-perfecthueBU.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\bitcoins.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Buy5000.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\DQmWH24KtcXLmQhb5QJwXt8gsixpPPZAgpYVED9fDtJQWMC.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\easyworship_cross04.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ecoin.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ecoinbr.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ecoinbrcps.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ethereum1.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\facade-of-a-shop.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphy123.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphy357657.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphybitolyl.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphycooltext.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphydarkblk.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphydarklasers.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphydarkspiral.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphydarkstage.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphyevencoolertext.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphyflashy.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphyguilding.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphyimage.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphyinformedzoom.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphyluiop.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphypopalbloomy.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphysquarepusher.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphytext345.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\giphytext34657.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\images (1).jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\images (2).jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\images.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\maxresdefault-620x330.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\minerpanel.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\minerpanelplau21r.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\monero1.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NextButton.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Pure.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\record_button.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\skip_button_left.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\skip_button_left_new1.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\skip_button_left_new2.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\skip_button_right.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\skip_button_right_new1.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\skip_button_right_new2.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\source.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square310x310Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square310x310Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\stop_button.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\WithdrawPie.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\WithdrawPie2.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\xe8.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\New1\1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\2.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\2-2.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\3.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\3.jpg">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\3-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\004.jpg">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\4.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\005.jpg">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\5-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\6-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\7-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\8-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\9-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\10-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\11.jpg">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\11-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\12-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\13-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\14-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\15-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\16-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\17-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\18-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\19-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\20-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\21-1.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\1080_Green_White_Sparkles_loop_Videvo.jpg">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\abstract-nature.jpg">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\bit.jpg">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\bitologo2.png">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\bokeh-gold-wallpaper-2560x1600.jpg">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\border1.png">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\britishflag.png">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\brushed-panel-444516.jpg">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\cryptocurrency-wallets.jpg">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\currency-trading.jpg">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\ECN3.jpeg">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\ecn-central2.png">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\ecnpowering.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\ecn-world-logo-4.png">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\favicon-96x96.png">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\flashing-lights-bulb-vj-spotlight-wall-of-lights-stage-motion-graphic-background-4k-ultra-hd_vy6me9si__F0000.png">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\giphy.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\giphy-downsized4r56456.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\giphy-downsizeddfrsg.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\giphy-downsized-ltcgrow.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\giphy-downsizedrettry.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\giphy-downsizedwqee.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\giphyhytj.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\giphyrdfgswaa.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\giphysdaff.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\giphytyuiyi.gif">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\gold-and-white-background-light-gold-abstract-background-a87740526b215871.jpg">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New1\hollywood_golden_bokeh_by_diamondlightart-d4s7drt.png">
+      <Filter>Assets\New1</Filter>
+    </Image>
+    <Image Include="Assets\New2\AmusedBraveAtlanticridleyturtle-poster.jpg">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\easyworship_cross04.jpg">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphy123.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphy357657.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphybitolyl.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphycooltext.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphydarkblk.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphydarklasers.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphydarkspiral.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphydarkstage.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphyevencoolertext.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphyflashy.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphyguilding.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphyimage.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphyinformedzoom.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphypopalbloomy.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphysquarepusher.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphytext345.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New2\giphytext34657.gif">
+      <Filter>Assets\New2</Filter>
+    </Image>
+    <Image Include="Assets\New3\6a90b8ce390c7646c515cab20aff56c8.jpg">
+      <Filter>Assets\New3</Filter>
+    </Image>
+    <Image Include="Assets\New3\image_265422.jpg">
+      <Filter>Assets\New3</Filter>
+    </Image>
+    <Image Include="Assets\New3\pngtree-black-gold-premium-texture-film-festival-mobile-phone-poster-image_194129.jpg">
+      <Filter>Assets\New3</Filter>
+    </Image>
+    <Image Include="Assets\New3\pngtree-black-gold-technology-2019-annual-meeting-background-gold-backgroundtechnologyannual-meetingannual-image_70540.jpg">
+      <Filter>Assets\New3</Filter>
+    </Image>
+    <Image Include="Assets\New4\giph23y.gif">
+      <Filter>Assets\New4</Filter>
+    </Image>
+    <Image Include="Assets\New4\giphy34324.gif">
+      <Filter>Assets\New4</Filter>
+    </Image>
+    <Image Include="Assets\New4\giphy234234.gif">
+      <Filter>Assets\New4</Filter>
+    </Image>
+    <Image Include="Assets\New4\giphyblue.gif">
+      <Filter>Assets\New4</Filter>
+    </Image>
+    <Image Include="Assets\New4\giphyerwer.gif">
+      <Filter>Assets\New4</Filter>
+    </Image>
+    <Image Include="Assets\New4\giphygreen.gif">
+      <Filter>Assets\New4</Filter>
+    </Image>
+    <Image Include="Assets\New4\giphygreenstar.gif">
+      <Filter>Assets\New4</Filter>
+    </Image>
+    <Image Include="Assets\New4\giphypulser.gif">
+      <Filter>Assets\New4</Filter>
+    </Image>
+    <Image Include="Assets\New4\giphypurple.gif">
+      <Filter>Assets\New4</Filter>
+    </Image>
+    <Image Include="Assets\New4\giphyrewr.gif">
+      <Filter>Assets\New4</Filter>
+    </Image>
+    <Image Include="Assets\squareTile-sdk.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\smallTile-sdk.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\smallTile-sdk.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\New5\giphyccry.gif">
+      <Filter>Assets\New5</Filter>
+    </Image>
+    <Image Include="Assets\New5\giphycheesy.gif">
+      <Filter>Assets\New5</Filter>
+    </Image>
+    <Image Include="Assets\New5\giphychunkaff.gif">
+      <Filter>Assets\New5</Filter>
+    </Image>
+    <Image Include="Assets\New5\giphyenergy.gif">
+      <Filter>Assets\New5</Filter>
+    </Image>
+    <Image Include="Assets\New5\giphygrswirl.gif">
+      <Filter>Assets\New5</Filter>
+    </Image>
+    <Image Include="Assets\New5\giphyhorison.gif">
+      <Filter>Assets\New5</Filter>
+    </Image>
+    <Image Include="Assets\New5\giphylarf.gif">
+      <Filter>Assets\New5</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ecoin-sdk.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\osirem-sdk.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\osirem-sdk3.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\PackageLogo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\PackageLogo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\PackageLogo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\PackageLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\PackageLogo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square310x310Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreenV5.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreenV5.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreenV5.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreenV5.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreenV5.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square310x310Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square310x310Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square71x71Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square71x71Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square71x71Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square71x71Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square71x71Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(SharedContentDir)\xaml\App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Package.StoreAssociation.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Content\comPixelShader.hlsl">
+      <Filter>Content\Shader Files</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\comVertexShader.hlsl">
+      <Filter>Content\Shader Files</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\CurvePixelShader.hlsl">
+      <Filter>Content\Shader Files</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\CurveVertexShader.hlsl">
+      <Filter>Content\Shader Files</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\QcomGridPixelShader.hlsl">
+      <Filter>Content\Shader Files</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\QcomGridVertexShader.hlsl">
+      <Filter>Content\Shader Files</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\SamplePixelShader.hlsl">
+      <Filter>Content\Shader Files</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\SampleVertexShader.hlsl">
+      <Filter>Content\Shader Files</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\Fonts\Audiowide-Regular.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+    <Font Include="Assets\Fonts\NovaCut.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+    <Font Include="Assets\Fonts\ProstoOne-Regular.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+    <Font Include="Assets\Fonts\Raleway-Light.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+    <Font Include="Assets\Fonts\Sevillana-Regular.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+  </ItemGroup>
+</Project>
