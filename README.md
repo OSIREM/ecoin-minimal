@@ -1,2 +1,5 @@
 # ecoin-minimal
-posix energy data task trading open source network
+
+Posix energy data task trading open source network
+
+only one dependency extractable <a href="http://www.paxjack.com/deps/boost1.47.0.zip">boost</a>
